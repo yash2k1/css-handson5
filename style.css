@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.indexOne {
+  background: yellow;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 40px;
+}
+
+.indexOneList {
+  margin-top: 0px;
+  width: 60vw;
+}
+.indexOneList li {
+  margin-top: 100px;
+  width: 60vw;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+/* ---------------- index one Box one----------------- */
+.box1 {
+  background: blue;
+  height: 100px;
+  width: 100px;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: box1 3s linear 0s infinite alternate;
+}
+@keyframes box1 {
+  from {
+    transform: skew(-30deg);
+  }
+  to {
+    transform: skew(30deg);
+  }
+}
+
+/* ------------------- index one box second--------------- */
+.box2 {
+  background: lightpink;
+  height: 100px;
+  width: 100px;
+
+  animation: box2 2s linear 0s infinite alternate;
+}
+@keyframes box2 {
+  from {
+    transform: skewy(-30deg);
+  }
+  to {
+    transform: skewy(30deg);
+  }
+}
+
+/* ------------------- index one box third--------------- */
+.box3 {
+  background: rgb(139, 14, 33);
+  height: 100px;
+  width: 100px;
+
+  animation: box3 2s ease-out 0s infinite;
+}
+@keyframes box3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ------------------- index one box fourth--------------- */
+.box4 {
+  background: rgb(131, 68, 78);
+  height: 100px;
+  width: 100px;
+
+  animation: box4 2s linear 0s infinite alternate;
+}
+@keyframes box4 {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1, 0.5);
+  }
+}
+/* ------------------- index one box fifth--------------- */
+.box5 {
+  background: rgb(47, 15, 190);
+  height: 100px;
+  width: 100px;
+
+  animation: box5 2s linear 0s infinite alternate;
+}
+@keyframes box5 {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(0.5, 1);
+  }
+}
+/* ------------------- index one box sixth--------------- */
+.box6 {
+  background: rgb(33, 185, 22);
+  height: 100px;
+  width: 100px;
+
+  animation: box6 3s linear 0s infinite alternate;
+}
+@keyframes box6 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(120deg);
+  }
+}
+/* ------------------last line----------------- */
+.indexOneAnchorTag {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  text-decoration: underline;
+  color: purple;
+  cursor: pointer;
+}
+/* -------------------index two------------------ */
+.indexTwo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellow;
+}
+.indexTwoList{
+margin-top: 0px;
+transform: translate(-15%);
+list-style-position: outside;
+}
+.indexTwoList li{
+  margin-bottom: 20px;
+}
+
+.div{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background: green;
+}
+/* ------------------- index one box first--------------- */
+.div1{
+  transition: 1s linear;
+  transform-origin: left;
+}
+.div1:hover  {
+/* transform: scaleX(3) ; */
+width: 300px;
+}
+/* ------------------- index second box first--------------- */
+.div2{
+  transition: 1s linear;
+  transform-origin:left top;
+}
+.div2:hover  {
+/* transform: scale(3,3) ; */
+width: 300px;
+height: 300px;
+}
+/* ------------------- index Third box first--------------- */
+.div3{
+  position: relative;
+  transition: 1s linear;
+  transform-origin:left top;
+}
+.div3:hover  {
+  /* transform: scaleX(3) ; */
+width: 300px;
+
+}
+/* ------------------- index four box first--------------- */
+.div4{
+  position: relative;
+  transition: 1s ease-in;
+  transform-origin:left top;
+}
+.div4:hover  {
+  /* transform: scaleX(3) ; */
+  width: 300px;
+}
+/* ------------------- index five box first--------------- */
+.div5{
+  position: relative;
+  transition: 1s ease-out;
+  transform-origin:left top;
+}
+.div5:hover  {
+  /* transform: scaleX(3) ; */
+width: 300px;
+}
+/* ------------------- index six box first--------------- */
+.div6{
+  position: relative;
+  transition: 1s ease-out;
+  transform-origin:left top;
+}
+.div6:hover  {
+  /* transform: scaleX(3) ; */
+width: 300px;
+}
+/* ------------------- index seven box first--------------- */
+
+.div7{
+  position: relative;
+  transition: 1s ease-out;
+  transform-origin:left top;
+}
+.div7:hover  {
+  /* transform: scaleX(3) ; */
+width: 300px;
+}
+
+
+
+/* ----------------anchor tags in index two------------ */
+.indexTwoAnchorTag{
+  display: block;
+  color: purple;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.indexTwoAnchorTag2{
+  display: block;
+  color:blue;
+  font-size: 40px;
+  text-decoration: underline;
+
+}
+/* -----------------index 3-------------------- */
+
+.sky{
+  height: 100vh;
+  background-image: url("./img/sky_720.jpg");
+background-size: cover;
+border: 10px solid;
+border-color: white green white orange;
+position: relative;
+overflow: hidden;
+z-index: -1;
+}
+.indexThreeHeader{
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.indexThreeHeader span:nth-child(1){
+  background-color: orange;
+}
+.indexThreeHeader span:nth-child(2){
+  background-color: white;
+}
+.indexThreeHeader span:nth-child(3){
+  background-color: green;
+}
+.sun{
+  background-image: url("./img/sun2.png");
+background-size: contain;
+position: absolute;
+height: 150px;
+width: 150px;
+background-repeat: no-repeat;
+right:60px;
+top: 100px;
+z-index: 4;
+animation: sun 15s linear  infinite ;
+}
+@keyframes sun {
+  100%{
+    transform: translateX(-100px);
+
+  }
+}
+.city{
+  position: absolute;
+  width: 400%;
+  height: 250px;
+  background-image: url("./img/city.png");
+  background-size: contain;
+  top:33vh;
+z-index: 4;
+animation: city 7s linear infinite;
+}
+@keyframes city {
+  100%{
+    transform: translateX(-1000px);
+
+  }
+}
+.road{
+  position: absolute;
+  width: 500%;
+  height: 250px;
+  background-image: url("./img/road.jpg");
+  background-size: contain;
+  bottom:0;
+  z-index: 4;
+  animation: road 3s linear  infinite ;
+}
+@keyframes road {
+  100%{
+    transform: translateX(-1200px);
+  }
+}
+.car{
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  background-image: url("./img/car.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top:54vh;
+  left:33.3%;
+ 
+z-index: 5;
+animation: car 1s ease-in-out infinite;
+}
+@keyframes car {
+  50%{
+    transform: translateY(-1%);
+  }
+  100%{
+    transform: translateY(1%);
+  }
+}
+
+.trianga{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-image: url("./img/image-removebg-preview\ \(3\).png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top:52vh;
+  left:57%;
+z-index: 6;
+}
+.wheel1{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-image: url("./img/wheel.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 69vh;
+  left: 36.2%;
+z-index: 6;
+}
+.wheel2{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-image: url("./img/wheel.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 69vh;
+  left: 56.6%;
+z-index: 6;
+}
+.wheel{
+  animation: rotation 1s linear  infinite;
+}
+@keyframes rotation {
+  100%{
+    transform: rotate(360deg);
+  }
+}
